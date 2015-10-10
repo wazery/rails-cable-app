@@ -1,0 +1,70 @@
+AllCops:
+  Include:
+    - 'Gemfile'
+    - 'app/**/*.rb'
+    - 'lib/**/*.rb'
+    - 'lib/**/*.rake'
+    - 'config/**/*.rb'
+  Exclude:
+    - 'db/**/*.rb'
+    - 'bin/**/*'
+    - 'features/**/*.rb'
+    - 'script/**/*.rb'
+    - 'vendor/**/*'
+
+Style/SelfAssignment: # good to be enabled
+  Enabled: true
+
+Style/NestedTernaryOperator: # good to be enabled
+  Enabled: true
+
+Style/PredicateName: # good to be enabled
+  Enabled: true
+
+Style/AccessorMethodName: # good to be enabled
+  Enabled: true
+
+Style/DoubleNegation:
+  Enabled: true
+
+Style/ClassVars:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Style/TrailingComma:
+  Enabled: false
+
+Metrics/BlockNesting: # good to be enabled
+  Enabled: true
+
+Metrics/ClassLength:
+  Enabled: true
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: true

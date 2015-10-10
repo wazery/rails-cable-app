@@ -1,0 +1,16 @@
+production:
+  url: redis://redistogo:f2e562828fc7bfec4027a2def604aa02@dab.redistogo.com:10119
+  host: dab.redistogo.com
+  port: 10119
+  password: f2e562828fc7bfec4027a2def604aa02
+  timeout: 1
+  inline: true
+
+local: &local
+  :url: redis://127.0.0.1:6379
+  :host: 127.0.0.1
+  :port: 6379
+  :timeout: 1
+  :inline: true
+development: *local
+test: *local
